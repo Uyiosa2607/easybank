@@ -37,6 +37,10 @@ header {
         font-weight: 600;
         font-size: 16px;
         box-sizing: content-box;
+
+        &:hover {
+            color: hsl(233, 26%, 24%);
+        }
     }
 
 }

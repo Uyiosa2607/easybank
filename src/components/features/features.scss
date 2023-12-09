@@ -1,6 +1,7 @@
 .features {
     background: hsl(0, 0%, 97%);
-    padding: 5rem 0;
+    padding: 5rem 10px;
+
 
     .container{
         max-width: 1240px;
@@ -36,7 +37,7 @@
             flex: 1;
 
             .item-img {
-            width: 70px;
+            width: 60px;
             height: auto;
             margin-bottom: 1rem;
            }
