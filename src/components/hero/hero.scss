@@ -60,4 +60,20 @@
             right: 0;
         }
     }
+
+        @media (max-width: 600px) {
+    
+            .wrapper {
+                flex-direction: column;
+
+                .left-hero {
+                    order: 1;
+                }
+
+                .right-hero {
+                    order: 4;
+                    height: 400px;
+                }
+            }
+        }
 }

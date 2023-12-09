@@ -60,5 +60,28 @@
         }
     }
 
+    @media (max-width: 600px) {
+
+        .title, .desc {
+            text-align: center;
+        }
+
+        .desc {
+            max-width: 100% !important;
+        }
+
+        .wrapper {
+
+            flex-direction: column;
+
+            .item-container {
+                text-align: center;
+
+                .item-img {
+                    align-self: center;
+                }
+            }
+        }
+    }
 
 }
