@@ -1,9 +1,5 @@
-$Bright_cyan: hsl(233, 26%, 24%);
-$Lime_green: hsl(136, 65%, 51%);
-$Dark_blue: hsl(192, 70%, 51%);
-$Grayish_Blue: hsl(233, 8%, 62%);
-$Light_Grayish_Blue: hsl(220, 16%, 96%);
-$Very_Light_Gray: hsl(0, 0%, 98%);
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
 
 * {
     margin: 0;
@@ -12,11 +8,10 @@ $Very_Light_Gray: hsl(0, 0%, 98%);
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Public Sans', sans-serif;
 }
 
 .container {
-    max-width: 1240px;
+    max-width: 114rem;
     margin: 0 auto;
-    padding: 0 1rem;
 }

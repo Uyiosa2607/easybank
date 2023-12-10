@@ -8,7 +8,7 @@ import Footer from "./components/footer/Footer"
 export default function App() {
 
   return (
-    <div className="app">
+    <div className="container">
         <Header/>
         <Hero/>
         <Features/>

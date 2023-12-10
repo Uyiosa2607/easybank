@@ -1,5 +1,6 @@
 import "./header.scss"
 import logo from "/logo.svg"
+import hamburger from "/icon-hamburger.svg"
 
 export default function Header() {
 
@@ -18,6 +19,7 @@ export default function Header() {
                 </div>
                 <div className="right">
                     <button className="header-btn">Request Invite</button>
+                    <img src={hamburger} alt="hamburger" className="hamburger" />
                 </div>
             </div>
         </header>

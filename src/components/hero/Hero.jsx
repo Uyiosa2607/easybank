@@ -11,7 +11,9 @@ export default function Hero() {
                     <button className="hero-btn">Request Invite</button>
                 </div>
                 <div className="right-hero">
-                    <img src={mockup} alt="hero-img" className="hero-img" />
+                    <div className="frame">
+                        <img src={mockup} alt="hero-img" className="hero-img" />
+                    </div>
                 </div>
             </div>
         </div>

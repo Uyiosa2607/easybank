@@ -1,8 +1,5 @@
 .hero {
     background: hsl(0, 0%, 100%);
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 0 10px;
 
     .hero-title {
         color: hsl(233, 26%, 24%);
@@ -31,6 +28,7 @@
         }
 
         .left-hero {
+            padding: 5rem;
 
             .hero-btn {
                 border: none;
@@ -41,39 +39,100 @@
                 font-weight: bold;
                 cursor: pointer;
                 border-radius: 30px;
+                margin-bottom: 1.2rem;
             }
         }
 
         .right-hero {
             position: relative;
-            margin: 0 auto;
-            width: auto;
-            height: 500px;
+            display: block;
+            width: 100%;
+            background-image: url("/bg-intro-desktop.svg");
+            background-repeat: no-repeat;
+            background-position: 3rem -15rem;
+
+            .frame {
+                position: relative;
+                width: 100%;
+            }
         }
 
         .hero-img {
             max-width: 95%;
-            height: auto;
-            object-fit: contain;
-            position: absolute;
-            top: -10%;
-            right: 0;
+            position: relative;
+            top: -6em;
         }
     }
 
-        @media (max-width: 600px) {
-    
-            .wrapper {
-                flex-direction: column;
+    @media (max-width:900px) {
+        .hero-title {
+            font-size: 2.7rem !important;
+        }
+    }
 
-                .left-hero {
-                    order: 1;
+    @media (max-width: 600px) {
+
+        text-align: center;
+
+        .hero-title {
+            font-size: 2.4rem;
+        }
+
+        .hero-desc {
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+        }
+
+        .wrapper {
+            flex-direction: column;
+
+            .left-hero {
+                order: 4;
+                padding: 2rem;
+            }
+
+            .right-hero {
+                order: 1;
+                position: relative;
+                display: block;
+                width: 100%;
+                background-image: url("/bg-intro-desktop.svg");
+                background-repeat: no-repeat;
+                background-position: 3rem -15rem;
+
+                .frame {
+                    height: fit-content !important;
                 }
+            }
 
-                .right-hero {
-                    order: 4;
-                    height: 400px;
+            .hero-img {
+                object-fit: cover;
+                position: relative;
+                max-width: 100% !important;
+                top: -5em;
+                right: 0;
+            }
+
+        }
+    }
+
+    @media (max-width: 375px) {
+
+        text-align: center;
+
+        .hero-title {
+            font-size: 2.2rem !important;
+        }
+
+        .wrapper {
+
+            .right-hero {
+
+                .frame {
+                    height: 350px !important;
                 }
             }
         }
+    }
 }

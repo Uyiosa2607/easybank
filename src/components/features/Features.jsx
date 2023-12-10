@@ -9,7 +9,7 @@ export default function Features() {
     return (
 
         <div className="features">
-            <div className="container">
+            <div className="features-container">
                 <h1 className="title">Why choose Easybank?</h1>
                 <p className="desc">We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.</p>
 

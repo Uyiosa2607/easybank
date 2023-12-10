@@ -1,12 +1,6 @@
 .features {
     background: hsl(0, 0%, 97%);
-    padding: 5rem 10px;
-
-
-    .container{
-        max-width: 1240px;
-        margin: 0 auto;
-    }
+    padding: 5rem;
 
     .title {
         margin-bottom: 2rem;
@@ -62,12 +56,19 @@
 
     @media (max-width: 600px) {
 
+        padding: 2rem 10px;
+
         .title, .desc {
             text-align: center;
         }
 
+        .title {
+            margin-bottom: .8rem;
+        }
+
         .desc {
             max-width: 100% !important;
+            margin-bottom: 5rem;
         }
 
         .wrapper {
